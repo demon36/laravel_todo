@@ -60,7 +60,8 @@ class taskController extends Controller
       if($request->all()['isChecked']== "true"){
         $task->done=true;
       }
-      else {  $task->done=false;
+      else {
+      	$task->done=false;
       }
       $task->save();
     }
